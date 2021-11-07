@@ -3,10 +3,10 @@ from random import choice
 lst = ["Tanay", "Rudra", "Harsh", "Vrinda"]
 td = ["Truth", "dare"]
 
-continue1 = "y"
+status = "y"
 
-def main():
-    while continue1 == "y":
+def main(status):
+    while status == "y":
         a = choice(lst)
         b = choice(lst)
         c = choice(td)
@@ -14,9 +14,9 @@ def main():
             print(f"aksing {a}\nanswering {b} -- will do {c} \n =============================")
             ask = input("Do you wanna continue [y] [n]:")
             if ask == "n":
-                continue1 = "n"
+                status = "n"
         else:
             continue
 
 if __name__ == "__main__":
-    main()
+    main(status)
