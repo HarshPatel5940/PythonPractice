@@ -1,0 +1,14 @@
+Participating in a quiz can be fun as it provides a competitive element. Some educational institutes use it as a tool to measure knowledge level, abilities and/or skills of their pupils either on a general level
+or in a specific field of study. Identify and analyse
+popular quiz shows and write a Python program to
+create a quiz that should also contain the following
+functionalities besides the one identified by you as
+a result of your analysis.
+• Create an administrative user ID and password
+to categorically add, modify, delete a question
+• Register the student before allowing her or him
+to play a quiz
+• Allow selection of category based on subject area
+• Display questions as per the chosen category
+• Keep the score as the participant plays
+• Display the final score
