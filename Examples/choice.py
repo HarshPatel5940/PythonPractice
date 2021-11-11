@@ -5,8 +5,9 @@ td = ["Truth", "dare"]
 
 status = "y"
 
-def main(status):
-    while status == "y":
+
+def main(loop):
+    while loop == "y":
         a = choice(lst)
         b = choice(lst)
         c = choice(td)
@@ -14,9 +15,10 @@ def main(status):
             print(f"aksing {a}\nanswering {b} -- will do {c} \n =============================")
             ask = input("Do you wanna continue [y] [n]:")
             if ask == "n":
-                status = "n"
+                loop = "n"
         else:
             continue
+
 
 if __name__ == "__main__":
     main(status)
