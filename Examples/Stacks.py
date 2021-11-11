@@ -4,8 +4,6 @@
 # (ii) selecting only the incorrectly entered names
 # (iii) returning a list with corrected names.
 
-stack1 = []
-
 
 def Menu():
     x = """
@@ -19,12 +17,12 @@ Enter your choice: """
     return x
 
 
-def push(stack, name):
+def Push(stack, name):
     stack.append(name)
     print(f"{stack1[-1]} Has Been Added")
 
 
-def pop(stack):
+def Pop(stack):
     if len(stack) > 0:
         print(f"{stack[-1]} Has Been Removed")
         stack.pop()
@@ -71,7 +69,8 @@ def ChangedEntries(stack):
         print("stack1 is Empty")
 
 
-def main(stack):
+def main():
+    stack = []
     while True:
         choice = input(Menu())
         if choice == "1":
@@ -93,4 +92,4 @@ def main(stack):
 
 
 if __name__ == "__main__":
-    main(stack1)
+    main()
