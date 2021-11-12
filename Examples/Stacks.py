@@ -75,9 +75,9 @@ def main():
         choice = input(Menu())
         if choice == "1":
             name = input("Enter First and Last name: ")
-            push(stack, name)
+            Push(stack, name)
         elif choice == "2":
-            pop(stack)
+            Pop(stack)
         elif choice == "3":
             CorrectEntries(stack)
         elif choice == "4":
