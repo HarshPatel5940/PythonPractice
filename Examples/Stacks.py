@@ -19,7 +19,7 @@ Enter your choice: """
 
 def Push(stack, name):
     stack.append(name)
-    print(f"{stack1[-1]} Has Been Added")
+    print(f"{stack[-1]} Has Been Added")
 
 
 def Pop(stack):
