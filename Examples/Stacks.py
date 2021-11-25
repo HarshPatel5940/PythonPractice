@@ -9,10 +9,11 @@ def Menu():
     x = """
 1. Push
 2. Pop
-3. Correct Entries
-4. Wrong Entries
-5. Changed Entries (Entries which are corrected) 
-6. Exit
+3. All Entries            # Show All Entries
+4. Correct Entries        # Show Only Correct Entries
+5. Wrong Entries          # Show Only Wrong Entries
+6. Corrected Entries      # Wrong Entries will be corrected 
+7. Exit
 Enter your choice: """
     return x
 
@@ -30,13 +31,20 @@ def Pop(stack):
         print("stack1 is empty. (UnderFlow)")
 
 
+def AllEntries(stack):
+    if len(stack) > 0:
+        print(stack)
+    else:
+        print("stack is Empty")
+
+
 def CorrectEntries(stack):
     Correct = []
     if len(stack) > 0:
         for i in stack:
             if i == i.title():
                 Correct.append(i)
-        print(Correct, "# The Original Stack Has Been Updated")
+        print(Correct)
     else:
         print("stack1 is Empty")
 
@@ -63,7 +71,7 @@ def ChangedEntries(stack):
                 corrected.append(i.title())
                 new_stack.append(i.title())
 
-        print(corrected)
+        print(corrected, "# These Values have Been Updated in Main Stack")
         return new_stack
     else:
         print("stack1 is Empty")
@@ -79,13 +87,15 @@ def main():
         elif choice == "2":
             Pop(stack)
         elif choice == "3":
-            CorrectEntries(stack)
+            AllEntries(stack)
         elif choice == "4":
-            WrongEntries(stack)
+            CorrectEntries(stack)
         elif choice == "5":
+            WrongEntries(stack)
+        elif choice == "6":
             new_stack = ChangedEntries(stack)
             stack = list(new_stack)
-        elif choice == "6":
+        elif choice == "7":
             break
         else:
             print("Invalid Choice")
