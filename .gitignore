@@ -15,6 +15,7 @@ secrets.py
 
 # Generated files
 .idea/**/contentModel.xml
+.idea
 
 # Sensitive files
 .idea/**/dataSources/

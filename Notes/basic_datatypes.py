@@ -100,10 +100,7 @@ Sets = \
     set1.intersection_update()        to update the set with common values
     set1.difference_update()          to update the set with difference values
     set1.symmetric_difference_update()to update the set with symmetric difference values
-    set1.issuperset()                 to check it is a super set or not
-    set1.issubset()                   to check it is a sub set or not
     set1.isdisjoint()                 to check it is a disjoint set or not
-    set1.union()                      to combine two sets
     set1.intersection()               to get the common between two sets
     set1.difference()                 to get difference between the sets
     set1.symmetric_difference()       to get the symmetric difference between two sets
