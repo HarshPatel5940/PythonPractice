@@ -38,3 +38,21 @@ SELECT * FROM Empl WHERE name LIKE '%T';
 
 -- ? q10) Display the emp whose name contains 'L'
 SELECT * FROM Empl WHERE name CONTAINS 'L';
+
+
+-- ! This Practice Done By sir in class
+
+-- i. To display the details of those customers city is 'Delhi'
+SELECT * FROM CUSTOMER WHERE CITY = "Delhi";
+
+-- ii. To increase the price of all things 100 in the table ITEM
+UPDATE ITEM SET PRICE = PRICE + 1000;
+
+-- iii. To display the ITEMNAME, Max(PRICE).count(*) from ITEM
+SELECT NAME, DEPT, BASIC FROM DOCTOR, SALARY WHERE DEPT="ENT" AND DOCTOR.ID = SALARY.ID;
+
+-- iv. To display the ITEMNAME, PRICE * 100 from ITEM where MANUFACTURER = 'ABC'
+SELECT ITEMNAME, PRICE * 100 FROM ITEM WHERE MANUFACTURER = "ABC";
+
+-- v. To display the Distinct city from CUSTOMER
+SELECT DISTINCT CITY FROM CUSTOMER;
