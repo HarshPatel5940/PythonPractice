@@ -45,14 +45,21 @@ SELECT * FROM Empl WHERE name CONTAINS 'L';
 -- i. To display the details of those customers city is 'Delhi'
 SELECT * FROM CUSTOMER WHERE CITY = "Delhi";
 
--- ii. To increase the price of all things 100 in the table ITEM
+-- ? ii. To increase the price of all things 100 in the table ITEM
 UPDATE ITEM SET PRICE = PRICE + 1000;
 
--- iii. To display the ITEMNAME, Max(PRICE).count(*) from ITEM
+-- ? iii. To display the ITEMNAME, Max(PRICE).count(*) from ITEM
 SELECT NAME, DEPT, BASIC FROM DOCTOR, SALARY WHERE DEPT="ENT" AND DOCTOR.ID = SALARY.ID;
 
--- iv. To display the ITEMNAME, PRICE * 100 from ITEM where MANUFACTURER = 'ABC'
+-- ? iv. To display the ITEMNAME, PRICE * 100 from ITEM where MANUFACTURER = 'ABC'
 SELECT ITEMNAME, PRICE * 100 FROM ITEM WHERE MANUFACTURER = "ABC";
 
--- v. To display the Distinct city from CUSTOMER
+-- ? v. To display the Distinct city from CUSTOMER
 SELECT DISTINCT CITY FROM CUSTOMER;
+
+-- ! More Practice Questions given by sir.
+-- create a table student with 10 records admission number, name, group, average marks, grade, class and section
+
+-- 1) find the minimum marks where the average is less than 75
+-- 2) find the sum of the average marks for all the students whose grade is B
+-- 3) find the average for all students whose class is 12 and section is B
