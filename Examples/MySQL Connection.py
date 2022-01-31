@@ -11,7 +11,7 @@ if connection.is_connected():
 
 cursor = connection.cursor()
 
-# ? QUERY = "INSERT INTO customer(name,address,phone) VALUES(%s, %s, %s)"
+#  ? QUERY = "INSERT INTO customer(name,address,phone) VALUES(%s, %s, %s)"
 
 # ? val = [
 # ?     ("Harsh", "Kellys", "01234"),
